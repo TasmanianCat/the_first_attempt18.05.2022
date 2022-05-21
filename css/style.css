@@ -129,6 +129,15 @@ body {
   padding: 1.875rem;
 }
 
+.img-about {
+  display: block;
+  width: 100%;
+  float: left;
+  border-radius: 50%;
+  max-width: 7rem;
+  padding: 1.1rem;
+}
+
 h1 {
   width: 100%;
   font-size: 3rem;
@@ -147,6 +156,7 @@ h3 {
   padding-bottom: 1.875rem;
   text-shadow: 2px 2px 8px #000000;
   letter-spacing: 0.1rem;
+  line-height: 1.2;
 }
 
 .topnav {
@@ -161,7 +171,8 @@ h3 {
   text-align: center;
   padding: 0.875rem 1rem;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.07rem;
 }
 
 .topnav a:hover {
@@ -211,6 +222,7 @@ h2 {
   font-size: 2rem;
   text-align: center;
   margin: 1.25rem;
+  line-height: 1.2;
 }
 
 .first-block-main {
@@ -225,7 +237,29 @@ h2 {
   color: black;
   line-height: 1.5;
   text-shadow: whitesmoke 2px 2px;
+  padding-bottom: 1rem;
 }
+
+.p-main-contact-last {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.5;
+  text-shadow: whitesmoke 2px 2px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+ol li {
+  margin-left: 1.875rem;
+}
+
+#social_medea {
+  display: block;
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
 
 .footer {
   padding: 1.875rem;
