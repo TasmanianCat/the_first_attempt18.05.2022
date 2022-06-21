@@ -167,6 +167,7 @@ h3 {
 .topnav a {
   float: left;
   display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #f2f2f2;
   text-align: center;
   padding: 0.875rem 1rem;
@@ -183,6 +184,7 @@ h3 {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+  cursor: default;
 }
 
 .topnav .icon {
@@ -236,7 +238,7 @@ h2 {
   font-size: 1.2rem;
   color: black;
   line-height: 1.5;
-  text-shadow: whitesmoke 2px 2px;
+  text-shadow: 2px 2px 8px whitesmoke;
   padding-bottom: 1rem;
 }
 
@@ -244,13 +246,17 @@ h2 {
   font-size: 1.2rem;
   color: black;
   line-height: 1.5;
-  text-shadow: whitesmoke 2px 2px;
+  text-shadow: 2px 2px 8px whitesmoke;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 ol li {
   margin-left: 1.875rem;
+}
+
+.calendar {
+  margin-bottom: 1rem;
 }
 
 #social_medea {
@@ -260,11 +266,61 @@ ol li {
   border-radius: 50%;
 }
 
-
 .footer {
   padding: 1.875rem;
   text-align: center;
   letter-spacing: 0.1rem;
   background-color: black;
   color: #ccffcc;
+}
+
+/* Accordion */
+.index-accordion {
+  padding-bottom: 1rem;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+  padding: 1.125rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 1.125rem;
+  line-height: 1.3;
+  background-color: white;
+  display: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 1rem;
+  color: rgb(119, 119, 119);
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }

@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>The Tasmanian Cat Studio</title>
     <meta name="author" content="The Tasmanian Cat Studio">
-    <meta name="description" content="Календарь ближайших мероприятий">
-    <meta name="keywords" content="календарь, мероприятия, события">
+    <meta name="description" content="Создание недорогих сайтов">
+    <meta name="keywords" content="создание сайтов, разработка сайта, купить недорогой сайт, заказать сайт">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -50,10 +50,10 @@
             </div>
         </header>
         <div class="topnav" id="myTopnav">
-            <a href="#" class="active">Цены</a>
+            <a href="#" class="active">Календарь</a>
             <a href="index.html">Главная</a>
+            <a href="price.html">Цены</a>
             <a href="about.html">Обо мне</a>
-            <a href="inprogress.html">Календарь</a>
             <a href="contact.html">Контакты</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -61,24 +61,18 @@
         </div>
         <main class="main">
             <div class="first-block-main">
-                <h2>Цены на услуги по созданию сайтов</h2>
-                <p class="p-main">Цены на мои услуги по созданию сайтов зависят от объема работы, а также временных
-                    затрат на
-                    конкретный проект и в среднем варьируются от $100 до $1.500 (United States) или эквивалентной суммы
-                    в рублях по курсу ЦБ РФ в день поступления оплаты на банковский счет.</p>
-                <h2>Способы оплаты</h2>
-                <p class="p-main">Предлагаю для вашего удобства различные способы оплаты:</p>
-                <ol>
-                    <li class="p-main">Оплата на расчетный счет индивидуального предпринимателя в ПАО "Сбербанк";</li>
-                    <li class="p-main">Оплата на карту банка физического лица (ПАО АКБ "АВАНГАРД", ПАО "РОСБАНК", ПАО
-                        "Сбербанк", АО
-                        "Газпромбанк", АО
-                        "Почта Банк");
-                    </li>
-                    <li class="p-main">Оплата по системе быстрых платежей (СБП);</li>
-                    <li class="p-main">Иные доступные способы оплаты для произведения платежей из других стран.</li>
-                    <li class="p-main">Оплата наличными не возбраняется.</li>
-                </ol>
+                <h2>Ближайшие мероприятия</h2>
+                <p class="p-main">Общедоступная информация о ближаших мероприятиях опубликована для клиентов и
+                    посетителей
+                    сайта.</p>
+                <div class="calendar">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FSamara&showTabs=0&showTitle=0&showPrint=0&showCalendars=0&showTz=1&src=MnA4OWpkcWpqb21qN3RvaGZjNzZlM3BzMjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=cnUucnVzc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%239fcc6f&color=%230B8043"
+                        style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div>
+                    <p class="p-main">Добавляемые в календарь мероприятия появляются по мере их планирования.</p>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -86,6 +80,7 @@
         </footer>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
 </body>
 
 </html>
